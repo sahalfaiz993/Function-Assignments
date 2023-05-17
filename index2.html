@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background colour</title>
+</head>
+<style>
+    body{
+        transition: all 1.5s ease;
+     }
+      h1{
+        color: red;
+        text-align: center;
+    } 
+h1:hover{
+    color: black;
+    scale: 1.2;
+    border-radius: 10px;
+} 
+
+select:hover:before {
+            transform: translate(-30%, -30%) rotate(405deg);
+            opacity: 0.8;
+        }
+     select { 
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            color: gray;
+            background-color: rgba(128, 128, 128, 0.603);
+            border-radius: 2px;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: all 0.3s ease;
+            
+        }
+option:hover{
+font-size: 40px;
+box-shadow:0 3px 5px gray;
+color: rgb(9, 81, 107); 
+
+
+} 
+
+
+</style>
+<body>
+    <h1> <b> <u>  <i> CHANGE THE BACKGROUND COLOR </i></u></b></h1>
+
+    <select onchange ="color(this.value)">
+        <option value="">Color</option>
+    <option value="blue">Blue</optio/n>
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="black">Black<option>
+    </select>
+
+
+
+    <script>
+        function color(value){
+            document.body.style.backgroundColor =value;
+        }
+    </script>
+
+
+
+
+    
+
+
+
+<!-- <h1>Red <span class="blue"> Blue </span><span class="green"> Green</span></h1>
+<button onclick="document.body.style.backgroundColor ='red'">Red</button>
+<button onclick="document.body.style.backgroundColor ='blue'">Blue</button>
+<button onclick="document.body.style.backgroundColor ='green'">Green</button> -->
+
+
+
+
+</body>
+</html>

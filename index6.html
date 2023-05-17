@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     button {
+              /* display: inline-block; */
+              padding: 10px 20px;
+              font-size: 18px;
+              text-align: center;
+              text-decoration: none;
+              color:gray;
+              background-color:sienna;
+              border-radius: 6px;
+              border:none ;
+              box-shadow: 0 ,4px, 6px rgba(0, 0, 0, 0.08);
+              cursor: pointer;
+              position: relative;
+                
+          }
+          input {
+              width: 400px;
+              padding: 5px;
+              font-size: 20px;
+              font-weight: normal;
+              margin-right: 20px;
+          }
+  
+  
+  button:hover{
+      font-size: 20px;
+      box-shadow:0 3px 5px gray;
+      color: rgb(10, 10, 10);
+      scale: 1.1;
+      
+  }
+  
+ .display {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+          } 
+  </style>
+<body>
+<!-- question no 6 -->
+<div class="display">
+    <input type="text" id="input">
+    <button onclick="showAlert()">Show Alert</button>
+</div> 
+   <script>
+   
+
+
+
+
+    var input = document.getElementById('input');
+
+function showAlert() {
+    if (input.value !== "") {
+        alert("The length of your input is " + input.value.length + " including spaces.");
+    } else {
+        alert("Please enter something.");
+    }    
+}
+   </script>
+</body>
+</html>
